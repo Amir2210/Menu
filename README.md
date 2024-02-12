@@ -30,3 +30,8 @@ The development process began with designing the MenuList component structure, i
 3. Run npm install to install dependencies.
 4. Run npm run dev to start the development server.
 5. Open your browser and navigate to http://localhost:5173 to view the application.
+
+
+
+https://github.com/Amir2210/Menu/assets/107459404/4746a5a8-adca-40e0-9de8-e85c1d47c059
+
