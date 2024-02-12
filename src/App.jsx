@@ -3,14 +3,14 @@ import data from './data'
 import { MenuList } from './cmps/MenuList'
 const App = () => {
   const [menuItems, setMenuItems] = useState(data)
-  const [catagory, setCatagory] = useState('all')
-  function onChangeCatagory(catagory) {
-    console.log(catagory)
-    setCatagory(catagory)
+  const [category, setCategory] = useState('all')
+
+  function onChangeCategory(category) {
+    setCategory(category.toLowerCase())
   }
   return (
     <main>
-      <MenuList menuItems={menuItems} onChangeCatagory={onChangeCatagory} />
+      <MenuList menuItems={menuItems} onChangeCategory={onChangeCategory} category={category} />
     </main>
   )
 }
