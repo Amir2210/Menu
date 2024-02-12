@@ -5,7 +5,7 @@ const App = () => {
   const [menuItems, setMenuItems] = useState(data)
   return (
     <main>
-      <MenuList />
+      <MenuList menuItems={menuItems} />
     </main>
   )
 }
