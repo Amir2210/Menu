@@ -4,9 +4,13 @@ import { MenuList } from './cmps/MenuList'
 const App = () => {
   const [menuItems, setMenuItems] = useState(data)
   const [catagory, setCatagory] = useState('all')
+  function onChangeCatagory(catagory) {
+    console.log(catagory)
+    setCatagory(catagory)
+  }
   return (
     <main>
-      <MenuList menuItems={menuItems} />
+      <MenuList menuItems={menuItems} onChangeCatagory={onChangeCatagory} />
     </main>
   )
 }
